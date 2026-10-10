@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fff8dc, #ffe082);
+  padding: 25px;
+}
+
+.header {
+  text-align: center;
+  background: linear-gradient(135deg, #ffca28, #ff9800);
+  color: #3e2723;
+  padding: 30px 15px;
+  border-radius: 18px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 17px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  background-color: white;
+  color: #6d4c00;
+  padding: 13px 22px;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #6d4c00;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 18px;
+  min-height: 250px;
+}
+
+.orders-container h2 {
+  text-align: center;
+  color: #795548;
+  margin-bottom: 25px;
+}
+
+.orders-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.order-card {
+  background-color: white;
+  border-left: 6px solid #ffb300;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.order-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.15);
+}
+
+.order-card h3 {
+  color: #5d4037;
+  margin-bottom: 12px;
+}
+
+.order-card p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.status {
+  display: inline-block;
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.status.cancelled {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 25px;
+  padding: 18px;
+  color: #5d4037;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    padding: 12px;
+  }
+
+  .header h1 {
+    font-size: 28px;
+  }
+
+  .navbar {
+    gap: 10px;
+  }
+
+  .navbar a {
+    padding: 11px 14px;
+  }
+
+  .content {
+    padding: 16px;
+  }
+}
